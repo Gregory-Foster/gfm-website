@@ -32,9 +32,9 @@ This project is a custom-built ministry website with:
 
 **Typography (planned)**
 
-- Headings: Montserrat  
-- Body: Lato  
-- Scripture / Quotes: Cormorant Garamond  
+- Headings: Montserrat
+- Body: Lato
+- Scripture / Quotes: Cormorant Garamond
 
 ---
 
@@ -50,7 +50,7 @@ This project is a custom-built ministry website with:
 
 ## 📁 Project Structure
 
-```text
+````text
 src/
   components/
     Header.jsx
@@ -79,3 +79,4 @@ src/
 Add this line directly under it:
 
 
+````
