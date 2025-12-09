@@ -1,22 +1,23 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Calendar from './pages/Calendar';
-import Ministries from './pages/Ministries';
-import Sermons from './pages/Sermons';
-import PrayerRequests from './pages/PrayerRequests';
-import Blog from './pages/Blog';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Donations from './pages/Donations';
-import Podcast from './pages/Podcast';
-import RecordTestimony from './pages/RecordTestimony';
-import Store from './pages/Store';
-import LiveStream from './pages/LiveStream';
-import Chat from './pages/Chat';
-import './styles/theme.css';
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Schedule from "./pages/Schedule";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Calendar from "./pages/Calendar";
+import Ministries from "./pages/Ministries";
+import Sermons from "./pages/Sermons";
+import PrayerRequests from "./pages/PrayerRequests";
+import Blog from "./pages/Blog";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Donations from "./pages/Donations";
+import Podcast from "./pages/Podcast";
+import RecordTestimony from "./pages/RecordTestimony";
+import Store from "./pages/Store";
+import LiveStream from "./pages/LiveStream";
+import Chat from "./pages/Chat";
+import "./styles/theme.css";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/store" element={<Store />} />
             <Route path="/live-stream" element={<LiveStream />} />
             <Route path="/chat" element={<Chat />} />
+            <Route path="/schedule" element={<Schedule />} />
           </Routes>
         </main>
         <Footer variant="scripture" />

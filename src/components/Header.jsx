@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import SafeIcon from '../common/SafeIcon';
-import * as FiIcons from 'react-icons/fi';
-import DropdownMenu from './DropdownMenu';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import SafeIcon from "../common/SafeIcon";
+import * as FiIcons from "react-icons/fi";
+import DropdownMenu from "./DropdownMenu";
 
 const { FiMenu, FiX } = FiIcons;
 
@@ -15,23 +15,24 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const mainNavItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Calendar', path: '/calendar' },
-    { name: 'Ministries', path: '/ministries' },
-    { name: 'Sermons', path: '/sermons' },
-    { name: 'Prayer Requests', path: '/prayer-requests' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'About', path: '/about' }
+    { name: "Home", path: "/" },
+    { name: "Calendar", path: "/calendar" },
+    { name: "Ministries", path: "/ministries" },
+    { name: "Sermons", path: "/sermons" },
+    { name: "Prayer Requests", path: "/prayer-requests" },
+    { name: "Blog", path: "/blog" },
+    { name: "About", path: "/about" },
+    { name: "Schedule a Call", path: "/schedule" },
   ];
 
   const dropdownItems = [
-    { name: 'Contact', path: '/contact' },
-    { name: 'Donations', path: '/donations' },
-    { name: 'Podcast', path: '/podcast' },
-    { name: 'Record a Testimony', path: '/record-testimony' },
-    { name: 'Music & Book Store', path: '/store' },
-    { name: 'Live Stream', path: '/live-stream' },
-    { name: 'Chat With Us', path: '/chat' }
+    { name: "Contact", path: "/contact" },
+    { name: "Donations", path: "/donations" },
+    { name: "Podcast", path: "/podcast" },
+    { name: "Record a Testimony", path: "/record-testimony" },
+    { name: "Music & Book Store", path: "/store" },
+    { name: "Live Stream", path: "/live-stream" },
+    { name: "Chat With Us", path: "/chat" },
   ];
 
   return (
@@ -45,7 +46,9 @@ const Header = () => {
               <div className="logo-icon"></div>
             </div>
             <div className="logo-text">
-              <h1 className="heading-font logo-main">Gregory Foster Ministries</h1>
+              <h1 className="heading-font logo-main">
+                Gregory Foster Ministries
+              </h1>
               <p className="logo-sub">GFM Online</p>
             </div>
           </div>
@@ -60,17 +63,19 @@ const Header = () => {
             <ul className="nav-menu desktop-nav">
               {mainNavItems.map((item) => (
                 <li key={item.path}>
-                  <Link 
-                    to={item.path} 
-                    className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                  <Link
+                    to={item.path}
+                    className={`nav-link ${
+                      location.pathname === item.path ? "active" : ""
+                    }`}
                   >
                     {item.name}
                   </Link>
                 </li>
               ))}
               <li className="dropdown-container">
-                <DropdownMenu 
-                  items={dropdownItems} 
+                <DropdownMenu
+                  items={dropdownItems}
                   isOpen={isDropdownOpen}
                   setIsOpen={setIsDropdownOpen}
                 />
@@ -84,12 +89,12 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className={`mobile-nav ${isMenuOpen ? 'mobile-nav-open' : ''}`}>
+          <div className={`mobile-nav ${isMenuOpen ? "mobile-nav-open" : ""}`}>
             <ul className="mobile-nav-menu">
               {mainNavItems.map((item) => (
                 <li key={item.path}>
-                  <Link 
-                    to={item.path} 
+                  <Link
+                    to={item.path}
                     className="mobile-nav-link"
                     onClick={closeMenu}
                   >
@@ -99,8 +104,8 @@ const Header = () => {
               ))}
               {dropdownItems.map((item) => (
                 <li key={item.path}>
-                  <Link 
-                    to={item.path} 
+                  <Link
+                    to={item.path}
                     className="mobile-nav-link"
                     onClick={closeMenu}
                   >
