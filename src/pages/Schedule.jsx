@@ -14,7 +14,7 @@ const Schedule = () => {
         {/* TidyCal embed goes here */}
         <div style={{ height: "800px", border: "none" }}>
           <iframe
-            src="https://tidycal.com/YOUR-UNIQUE-LINK"
+            src="https://tidycal.com/gregory-foster"
             title="Schedule with Gregory Foster"
             style={{ width: "100%", height: "100%", border: "none" }}
             loading="lazy"
