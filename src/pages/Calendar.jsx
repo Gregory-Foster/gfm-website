@@ -21,14 +21,14 @@ const Calendar = () => {
       title: "Youth Group",
       time: "6:00 PM",
       description:
-        "A positive, faith-centered environment where youth come together for encouragement, friendship, and spiritual growth.",
+        "A positive, faith-centered environment where youth come together for encouragement, friendship, and spiritual growth through engaging lessons and activities.",
     },
     {
       dayShort: "FRI",
       title: "Teen Group",
       time: "6:00 PM",
       description:
-        "A fun, faith-filled gathering designed to help teens build strong relationships, grow spiritually, and discover their God-given purpose.",
+        "A fun, faith-filled gathering designed to help teens build strong relationships, grow spiritually, and discover their God-given purpose through interactive discussions and activities.",
     },
   ];
 
@@ -38,101 +38,109 @@ const Calendar = () => {
         <div className="page-header">
           <h1 className="page-title heading-font">Calendar</h1>
           <p className="page-subtitle body-font">
-            Stay connected with our upcoming events and gatherings
+            Stay connected with our upcoming events and gatherings.
           </p>
         </div>
 
-        <div className="event-date">
-  <span className="date-day">{event.dayShort}</span>
-  <span className="date-month">WEEKLY</span>
-</div>
+        <div className="events-grid">
+          {events.map((event, index) => (
+            <div key={index} className="event-card card">
+              <div className="event-date">
+                <span className="date-day">{event.dayShort}</span>
+                <span className="date-month">WEEKLY</span>
+              </div>
 
+              <div className="event-details">
+                <h3 className="event-title heading-font">{event.title}</h3>
+                <p className="event-time">{event.time}</p>
+                <p className="event-description body-font">
+                  {event.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <style jsx>{`
         .calendar-page {
           padding: 60px 0;
-          min-height: 80vh;
+        }
+
+        .container {
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 0 16px;
         }
 
         .page-header {
-          text-align: center;
-          margin-bottom: 50px;
-        }
-
-        .page-title {
-          font-size: 2.5rem;
-          color: var(--gfm-dark-blue);
-          margin-bottom: 15px;
-        }
-
-        .page-subtitle {
-          font-size: 1.2rem;
-          color: var(--gfm-navy);
+          text-align: left;
+          margin-bottom: 32px;
         }
 
         .events-grid {
-          display: grid;
-          gap: 25px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
         }
 
         .event-card {
           display: flex;
-          gap: 25px;
           align-items: center;
+          padding: 20px 24px;
+          border-radius: 12px;
+          background: #ffffff;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
         }
 
         .event-date {
-          background-color: var(--gfm-light-blue);
-          color: var(--gfm-white);
-          border-radius: 12px;
-          padding: 20px;
-          text-align: center;
-          min-width: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 72px;
+          height: 72px;
+          border-radius: 16px;
+          background: #00a6d6;
+          color: #ffffff;
+          font-weight: 700;
+          margin-right: 24px;
+          text-transform: uppercase;
         }
 
         .date-day {
-          display: block;
-          font-size: 2rem;
-          font-weight: 700;
-          line-height: 1;
+          font-size: 18px;
+          letter-spacing: 0.08em;
         }
 
         .date-month {
-          display: block;
-          font-size: 0.9rem;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-        }
-
-        .event-details {
-          flex: 1;
+          font-size: 11px;
+          opacity: 0.9;
         }
 
         .event-title {
-          font-size: 1.5rem;
-          color: var(--gfm-dark-blue);
-          margin-bottom: 8px;
+          margin: 0;
+          font-size: 18px;
         }
 
         .event-time {
-          color: var(--gfm-light-blue);
+          margin: 4px 0 8px;
           font-weight: 600;
-          margin-bottom: 10px;
+          color: #0077aa;
         }
 
         .event-description {
-          color: var(--gfm-navy);
-          line-height: 1.6;
+          margin: 0;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
           .event-card {
             flex-direction: column;
-            text-align: center;
+            align-items: flex-start;
           }
 
-          .page-title {
-            font-size: 2rem;
+          .event-date {
+            margin-bottom: 12px;
           }
         }
       `}</style>
