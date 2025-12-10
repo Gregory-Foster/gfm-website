@@ -6,9 +6,7 @@ const Schedule = () => {
     <main className="page schedule-page">
       <section className="section">
         <h1>Schedule a Call</h1>
-        <p>
-          Choose a time that works for you.
-        </p>
+        <p>Choose a time that works for you.</p>
 
         {/* TidyCal embed goes here */}
         <div style={{ height: "800px", border: "none" }}>
