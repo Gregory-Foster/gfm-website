@@ -5,7 +5,7 @@ const Schedule = () => {
   return (
     <main className="page schedule-page">
       <section className="section">
-        <h1>Schedule a Call</h1>
+        <h2>Schedule a Call</h2>
         <p>Choose a time that works for you.</p>
 
         {/* TidyCal embed goes here */}
