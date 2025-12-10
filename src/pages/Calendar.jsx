@@ -42,30 +42,11 @@ const Calendar = () => {
           </p>
         </div>
 
-        <div className="events-grid">
-          {events.map((event, index) => (
-            <div key={index} className="event-card card">
-              <div className="event-date">
-                <span className="date-day">
-                  {new Date(event.date).getDate()}
-                </span>
-                <span className="date-month">
-                  {new Date(event.date).toLocaleDateString("en-US", {
-                    month: "short",
-                  })}
-                </span>
-              </div>
-              <div className="event-details">
-                <h3 className="event-title heading-font">{event.title}</h3>
-                <p className="event-time">{event.time}</p>
-                <p className="event-description body-font">
-                  {event.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+        <div className="event-date">
+  <span className="date-day">{event.dayShort}</span>
+  <span className="date-month">WEEKLY</span>
+</div>
+
 
       <style jsx>{`
         .calendar-page {
