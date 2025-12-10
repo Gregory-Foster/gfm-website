@@ -15,7 +15,7 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const mainNavItems = [
-    { name: "Home", path: "/" },
+    { name: "HomeXXX", path: "/" },
     { name: "Calendar", path: "/calendar" },
     { name: "Ministries", path: "/ministries" },
     { name: "Sermons", path: "/sermons" },
