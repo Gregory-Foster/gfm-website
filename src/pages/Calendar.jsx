@@ -1,37 +1,41 @@
 import React from "react";
 
 const Calendar = () => {
-  const events = [
-    {
-      date: "2024-01-15",
-      title: "Sunday Worship Service",
-      time: "10:00 AM",
-      description:
-        "Join us for our weekly worship service with inspiring music and biblical teaching.",
-    },
-    {
-      date: "2024-01-17",
-      title: "Bible Study",
-      time: "6:00 PM",
-      description:
-        "Come be refreshed at our Tuesday Night Bible Study! We explore the Scriptures together, ask real questions, and strengthen our walk with God through practical, life-changing biblical teaching.",
-    },
-    {
-      date: "2024-01-20",
-      title: "Youth Group",
-      time: "6:00 PM",
-      description:
-        "A positive, faith-centered environment where youth come together for encouragement, friendship, and spiritual growth through engaging lessons and activities.",
-    },
+ const events = [
+  {
+    dayShort: "SUN",
+    dayLabel: "Every Sunday",
+    title: "Sunday Worship Service",
+    time: "10:00 AM",
+    description:
+      "Join us for our weekly worship service with inspiring music, practical teaching, and a welcoming atmosphere.",
+  },
+  {
+    dayShort: "TUE",
+    dayLabel: "Every Tuesday",
+    title: "Bible Study",
+    time: "6:00 PM",
+    description:
+      "Come be refreshed at our Tuesday Night Bible Study as we explore scripture together and apply God’s Word to daily life.",
+  },
+  {
+    dayShort: "FRI",
+    dayLabel: "Every Friday",
+    title: "Youth Group",
+    time: "6:00 PM",
+    description:
+      "A positive, faith-centered environment where youth come together for encouragement, friendship, and spiritual growth.",
+  },
+  {
+    dayShort: "FRI",
+    dayLabel: "Every Friday",
+    title: "Teen Group",
+    time: "6:00 PM",
+    description:
+      "A fun, faith-filled gathering designed to help teens build strong relationships, grow spiritually, and discover their God-given purpose.",
+  },
+];
 
-    {
-      date: "2024-01-20",
-      title: "Teen Group",
-      time: "6:00 PM",
-      description:
-        "A fun, faith-filled gathering designed to help teens build strong relationships, grow spiritually, and discover their God-given purpose through interactive lessons, discussions, and activities.",
-    },
-  ];
 
   return (
     <div className="calendar-page">
