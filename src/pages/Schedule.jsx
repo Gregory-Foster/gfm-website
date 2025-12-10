@@ -7,8 +7,7 @@ const Schedule = () => {
       <section className="section">
         <h1>Schedule a Call</h1>
         <p>
-          Choose a time that works for you to connect with Gregory Foster for
-          prayer, counseling, or leadership coaching.
+          Choose a time that works for you.
         </p>
 
         {/* TidyCal embed goes here */}
