@@ -160,10 +160,9 @@ const ministries = [
             flex-direction: column;
             align-items: center;
           }
-        }
-      `}</style>
+             }</style>
     </div>
   );
-};
+}
 
 export default Ministries;
