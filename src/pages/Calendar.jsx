@@ -1,31 +1,36 @@
-import React from 'react';
+import React from "react";
 
 const Calendar = () => {
   const events = [
     {
-      date: '2024-01-15',
-      title: 'Sunday Worship Service',
-      time: '10:00 AM',
-      description: 'Join us for our weekly worship service with inspiring music and biblical teaching.'
+      date: "2024-01-15",
+      title: "Sunday Worship Service",
+      time: "10:00 AM",
+      description:
+        "Join us for our weekly worship service with inspiring music and biblical teaching.",
     },
     {
-      date: '2024-01-17',
-      title: 'Bible Study',
-      time: '7:00 PM',
-      description: 'Midweek Bible study focusing on the book of Romans.'
+      date: "2024-01-17",
+      title: "Bible Study",
+      time: "6:00 PM",
+      description:
+        "Come be refreshed at our Tuesday Night Bible Study! We explore the Scriptures together, ask real questions, and strengthen our walk with God through practical, life-changing biblical teaching.",
     },
     {
-      date: '2024-01-20',
-      title: 'Youth Group',
-      time: '6:00 PM',
-      description: 'Fun activities and spiritual growth for teens and young adults.'
-    }
-     {
-      date: '2024-01-20',
-      title: 'Teen Group',
-      time: '6:00 PM',
-      description: 'Activities and spiritual growth for teens and young adults.'
-    }
+      date: "2024-01-20",
+      title: "Youth Group",
+      time: "6:00 PM",
+      description:
+        "A positive, faith-centered environment where youth come together for encouragement, friendship, and spiritual growth through engaging lessons and activities.",
+    },
+
+    {
+      date: "2024-01-20",
+      title: "Teen Group",
+      time: "6:00 PM",
+      description:
+        "A fun, faith-filled gathering designed to help teens build strong relationships, grow spiritually, and discover their God-given purpose through interactive lessons, discussions, and activities.",
+    },
   ];
 
   return (
@@ -33,22 +38,30 @@ const Calendar = () => {
       <div className="container">
         <div className="page-header">
           <h1 className="page-title heading-font">Calendar</h1>
-          <p className="page-subtitle body-font">Stay connected with our upcoming events and gatherings</p>
+          <p className="page-subtitle body-font">
+            Stay connected with our upcoming events and gatherings
+          </p>
         </div>
 
         <div className="events-grid">
           {events.map((event, index) => (
             <div key={index} className="event-card card">
               <div className="event-date">
-                <span className="date-day">{new Date(event.date).getDate()}</span>
+                <span className="date-day">
+                  {new Date(event.date).getDate()}
+                </span>
                 <span className="date-month">
-                  {new Date(event.date).toLocaleDateString('en-US', { month: 'short' })}
+                  {new Date(event.date).toLocaleDateString("en-US", {
+                    month: "short",
+                  })}
                 </span>
               </div>
               <div className="event-details">
                 <h3 className="event-title heading-font">{event.title}</h3>
                 <p className="event-time">{event.time}</p>
-                <p className="event-description body-font">{event.description}</p>
+                <p className="event-description body-font">
+                  {event.description}
+                </p>
               </div>
             </div>
           ))}
