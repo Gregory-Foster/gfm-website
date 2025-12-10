@@ -5,88 +5,69 @@ import * as FiIcons from 'react-icons/fi';
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
-const Ministries = () => {
-  const ministries = [
-    {
-      icon: FiUsers,
-      title: 'Youth Ministry',
-      description: 'Engaging programs for teens and young adults to grow in faith and fellowship.',
-      buttonText: 'Learn More',
-      buttonLink: '#youth'
-    },
-    {
-      icon: FiHeart,
-      title: 'Community Outreach',
-      description: 'Serving our local community through food banks, shelter support, and assistance programs.',
-      buttonText: 'Get Involved',
-      buttonLink: '#outreach'
-    },
-    {
-      icon: FiMusic,
-      title: 'Worship Team',
-      description: 'Join our music ministry and help lead the congregation in praise and worship.',
-      buttonText: 'Join Us',
-      buttonLink: '#worship'
-    },
-    {
-      icon: FiBookOpen,
-      title: 'Bible Study Groups',
-      description: 'Small group Bible studies for deeper understanding and spiritual growth.',
-      buttonText: 'Find a Group',
-      buttonLink: '#bible-study'
-    },
-    {
-      icon: FiSun,
-      title: 'Children\'s Ministry',
-      description: 'Fun and engaging programs to help children learn about God\'s love.',
-      buttonText: 'Learn More',
-      buttonLink: '#children'
-    },
-    {
-      icon: FiHome,
-      title: 'Family Ministry',
-      description: 'Strengthening families through biblical principles and community support.',
-      buttonText: 'Explore',
-      buttonLink: '#family'
-    }
-  ];
+const ministries = [
+  {
+    icon: FiUsers,
+    title: 'Youth Ministry',
+    description: 'Engaging programs for teens and young adults to grow in faith and fellowship.',
+    buttonText: 'Learn More',
+    buttonLink: '#youth',
+    leaderName: 'Minister James Carter',
+    leaderTitle: 'Youth Ministry Director',
+    leaderPhoto: '/images/leaders/james-carter.jpg',
+  },
+  {
+    icon: FiHeart,
+    title: 'Community Outreach',
+    description: 'Serving our local community through food banks, shelter support, and assistance programs.',
+    buttonText: 'Get Involved',
+    buttonLink: '#outreach',
+    leaderName: 'Sister Angela Morris',
+    leaderTitle: 'Outreach Coordinator',
+    leaderPhoto: '/images/leaders/angela-morris.jpg',
+  },
+  {
+    icon: FiMusic,
+    title: 'Worship Team',
+    description: 'Join our music ministry and help lead the congregation in praise and worship.',
+    buttonText: 'Join Us',
+    buttonLink: '#worship',
+    leaderName: 'Elder Marcus Hill',
+    leaderTitle: 'Worship Leader',
+    leaderPhoto: '/images/leaders/marcus-hill.jpg',
+  },
+  {
+    icon: FiBookOpen,
+    title: 'Bible Study Groups',
+    description: 'Small group Bible studies for deeper understanding and spiritual growth.',
+    buttonText: 'Find a Group',
+    buttonLink: '#biblestudy',
+    leaderName: 'Deacon Samuel Price',
+    leaderTitle: 'Bible Study Coordinator',
+    leaderPhoto: '/images/leaders/samuel-price.jpg',
+  },
+  {
+    icon: FiSun,
+    title: 'Children’s Ministry',
+    description: 'Fun and engaging programs to help children learn about God’s love.',
+    buttonText: 'Learn More',
+    buttonLink: '#children',
+    leaderName: 'Sister Monica Green',
+    leaderTitle: 'Children’s Ministry Director',
+    leaderPhoto: '/images/leaders/monica-green.jpg',
+  },
+  {
+    icon: FiHome,
+    title: 'Family Ministry',
+    description: 'Strengthening families through biblical principles and community support.',
+    buttonText: 'Explore',
+    buttonLink: '#family',
+    leaderName: 'Pastor Rodney Hayes',
+    leaderTitle: 'Family Ministry Pastor',
+    leaderPhoto: '/images/leaders/rodney-hayes.jpg',
+  },
+];
 
-  return (
-    <div className="ministries-page">
-      <div className="container">
-        <div className="page-header">
-          <h1 className="page-title heading-font">Ministries</h1>
-          <p className="page-subtitle body-font">
-            Discover ways to serve, grow, and connect in our church community
-          </p>
-        </div>
-
-        <div className="ministries-grid">
-          {ministries.map((ministry, index) => (
-            <SectionCard
-              key={index}
-              icon={ministry.icon}
-              title={ministry.title}
-              description={ministry.description}
-              buttonText={ministry.buttonText}
-              buttonLink={ministry.buttonLink}
-            />
-          ))}
-        </div>
-
-        <div className="ministry-cta card">
-          <h2 className="heading-font">Ready to Get Involved?</h2>
-          <p className="body-font">
-            We believe everyone has unique gifts and talents to contribute to God's kingdom. 
-            Whether you're looking to serve, lead, or simply connect with others, there's a 
-            place for you in our ministry family.
-          </p>
-          <div className="cta-buttons">
-            <a href="/contact" className="btn-primary">Contact Us</a>
-            <a href="/volunteer" className="btn-outline volunteer-btn">Volunteer Today</a>
-          </div>
-        </div>
-      </div>
 
       <style jsx>{`
         .ministries-page {
