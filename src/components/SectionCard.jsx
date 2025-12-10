@@ -1,7 +1,6 @@
 import React from "react";
 import SafeIcon from "../common/SafeIcon";
 
-
 const SectionCard = ({
   icon,
   title,
