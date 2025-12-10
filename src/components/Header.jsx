@@ -22,11 +22,11 @@ const Header = () => {
     { name: "Prayer Requests", path: "/prayer-requests" },
     { name: "Blog", path: "/blog" },
     { name: "About", path: "/about" },
-    { name: "Schedule a Call", path: "/schedule" },
   ];
 
   const dropdownItems = [
     { name: "Contact", path: "/contact" },
+    { name: "Schedule a Call", path: "/schedule" },
     { name: "Donations", path: "/donations" },
     { name: "Podcast", path: "/podcast" },
     { name: "Record a Testimony", path: "/record-testimony" },
