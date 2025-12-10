@@ -20,6 +20,12 @@ const Calendar = () => {
       time: '6:00 PM',
       description: 'Fun activities and spiritual growth for teens and young adults.'
     }
+     {
+      date: '2024-01-20',
+      title: 'Teen Group',
+      time: '6:00 PM',
+      description: 'Activities and spiritual growth for teens and young adults.'
+    }
   ];
 
   return (
