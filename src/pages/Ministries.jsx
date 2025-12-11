@@ -112,50 +112,90 @@ const Ministries = () => {
       </div>
 
       <style jsx>{`
-        .ministries-page {
-          padding: 60px 0;
-          min-height: 80vh;
-        }
+  .ministries-page {
+    padding: 60px 0;
+    min-height: 80vh;
+  }
 
-        .page-header {
-          text-align: center;
-          margin-bottom: 50px;
-        }
+  .page-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-        .page-title {
-          font-size: 2.5rem;
-          color: var(--gfm-dark-blue);
-          margin-bottom: 15px;
-        }
+  .page-title {
+    font-size: 2.5rem;
+    color: var(--gfm-dark-blue);
+    margin-bottom: 15px;
+  }
 
-        .page-subtitle {
-          font-size: 1.2rem;
-          color: var(--gfm-navy);
-          max-width: 600px;
-          margin: 0 auto;
-        }
+  .page-subtitle {
+    font-size: 1.2rem;
+    color: var(--gfm-navy);
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-        .ministries-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-          gap: 24px;
-        }
+  /* 3 cards per row on desktop */
+  .ministries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 24px;
+  }
 
-        .ministry-cta {
-          padding: 40px 20px;
-          margin-top: 40px;
-        }
+  /* 2 cards per row on medium screens */
+  @media (max-width: 900px) {
+    .ministries-grid {
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+  }
 
-        .ministry-cta h2 {
-          font-size: 1.7rem;
-        }
+  /* 1 card per row on phones */
+  @media (max-width: 600px) {
+    .ministries-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 
-        .cta-buttons {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-      `}</style>
+  /* Make ministry & leader info stand out */
+  .ministries-page .leader-header {
+    margin-bottom: 8px;
+  }
+
+  .ministries-page .leader-name {
+    font-weight: 700;
+    color: var(--gfm-dark-blue);
+  }
+
+  .ministries-page .leader-title {
+    font-weight: 600;
+    color: var(--gfm-navy);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .ministries-page .card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--gfm-dark-blue);
+    margin-top: 4px;
+  }
+
+  .ministry-cta {
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+
+  .ministry-cta h2 {
+    font-size: 1.7rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`}</style>
+
     </div>
   );
 };
