@@ -15,7 +15,7 @@ const Ministries = () => {
       buttonLink: "#youth",
       leaderName: "Minister James Carter",
       leaderTitle: "Youth Ministry Director",
-      leaderPhoto: "/images/leaders/james-carter.jpg",
+      leaderPhoto: "/images/leaders/agent-2.jpg",
     },
     {
       icon: FiHeart,
@@ -26,7 +26,7 @@ const Ministries = () => {
       buttonLink: "#outreach",
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
-      leaderPhoto: "/images/leaders/angela-morris.jpg",
+      leaderPhoto: "assets/images/leaders/testimonials.jpg",
     },
     {
       icon: FiMusic,
