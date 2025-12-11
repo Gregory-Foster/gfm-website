@@ -3,11 +3,12 @@ import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
 // Leader photos
 import youthLeaderPhoto from "../assets/images/leaders/agent-2.jpg";
-import outreachLeaderPhoto from "../assets/images/leaders/trainer-2.jpg";
+import outreachLeaderPhoto from "../assets/images/leaders/agent-2.jpg";
 import worshipLeaderPhoto from "../assets/images/leaders/IMG_0083.JPG";
 import bibleStudyLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
 import childrenLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 import familyLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
+
 
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
