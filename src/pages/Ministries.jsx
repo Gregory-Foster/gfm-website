@@ -1,7 +1,7 @@
 import React from "react";
 import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
-import youthLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
+import youthLeaderPhoto from "../assets/images/testimonials-5.jpg";
 
 
 
@@ -30,7 +30,7 @@ const Ministries = () => {
       buttonLink: "#outreach",
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
-      leaderPhoto: youthLeaderPhoto,
+      leaderPhoto:
     },
     {
       icon: FiMusic,
