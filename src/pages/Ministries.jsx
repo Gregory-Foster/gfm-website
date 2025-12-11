@@ -26,7 +26,7 @@ const Ministries = () => {
       buttonLink: "#outreach",
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
-      leaderPhoto: "/images/leaders/testimonial.jpg",
+      leaderPhoto: "assets/images/leaders/testimonials.jpg",
     },
     {
       icon: FiMusic,
