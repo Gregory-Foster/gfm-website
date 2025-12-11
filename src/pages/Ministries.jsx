@@ -28,7 +28,7 @@ const Ministries = () => {
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
       leaderPhoto: youthLeaderPhoto,
-     },
+    },
     {
       icon: FiMusic,
       title: "Worship Team",
