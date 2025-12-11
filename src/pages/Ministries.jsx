@@ -22,7 +22,7 @@ const Ministries = () => {
       buttonLink: "#youth",
       leaderName: "Minister James Carter",
       leaderTitle: "Youth Ministry Director",
-      leaderPhoto: "/images/leaders/agent-2.jpg",
+      leaderPhoto: "gfm-website/src/assets/agent-2.jpg",
     },
     {
       icon: FiHeart,
