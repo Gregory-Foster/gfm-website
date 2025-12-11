@@ -1,16 +1,16 @@
- 1  import React from 'react';
- 2  import SectionCard from '../components/SectionCard';
- 3  import SafeIcon from '../common/SafeIcon';
- 4  import * as FiIcons from 'react-icons/fi';
- 5  
- 6 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
+import React from 'react';
+import SectionCard from '../components/SectionCard';
+import * as FiIcons from 'react-icons/fi';
+
+const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
 const Ministries = () => {
   const ministries = [
     {
       icon: FiUsers,
       title: 'Youth Ministry',
-      description: 'Engaging programs for teens and young adults to grow in faith and fellowship.',
+      description:
+        'Engaging programs for teens and young adults to grow in faith and fellowship.',
       buttonText: 'Learn More',
       buttonLink: '#youth',
       leaderName: 'Minister James Carter',
@@ -20,7 +20,8 @@ const Ministries = () => {
     {
       icon: FiHeart,
       title: 'Community Outreach',
-      description: 'Serving our local community through food banks, shelter support, and assistance programs.',
+      description:
+        'Serving our local community through food banks, shelter support, and assistance programs.',
       buttonText: 'Get Involved',
       buttonLink: '#outreach',
       leaderName: 'Sister Angela Morris',
@@ -30,14 +31,47 @@ const Ministries = () => {
     {
       icon: FiMusic,
       title: 'Worship Team',
-      description: 'Join our music ministry and help lead the congregation in praise and worship.',
+      description:
+        'Join our music ministry and help lead the congregation in praise and worship.',
       buttonText: 'Join Us',
       buttonLink: '#worship',
       leaderName: 'Minister David Price',
       leaderTitle: 'Worship Leader',
       leaderPhoto: '/images/leaders/david-price.jpg',
     },
-    // 👉 Add your other ministries here (Bible Study Groups, Children’s, Family, etc.)
+    {
+      icon: FiBookOpen,
+      title: 'Bible Study Groups',
+      description:
+        'Small group Bible studies for deeper understanding and spiritual growth.',
+      buttonText: 'Find a Group',
+      buttonLink: '#biblestudy',
+      leaderName: 'Elder Sharon Williams',
+      leaderTitle: 'Discipleship Director',
+      leaderPhoto: '/images/leaders/sharon-williams.jpg',
+    },
+    {
+      icon: FiSun,
+      title: 'Children’s Ministry',
+      description:
+        'Fun and engaging programs to help children learn about God’s love.',
+      buttonText: 'Learn More',
+      buttonLink: '#children',
+      leaderName: 'Sister Monica Green',
+      leaderTitle: 'Children’s Ministry Leader',
+      leaderPhoto: '/images/leaders/monica-green.jpg',
+    },
+    {
+      icon: FiHome,
+      title: 'Family Ministry',
+      description:
+        'Strengthening families through biblical principles, prayer, and support.',
+      buttonText: 'Explore',
+      buttonLink: '#family',
+      leaderName: 'Pastor Rodney Hayes',
+      leaderTitle: 'Family Ministry Pastor',
+      leaderPhoto: '/images/leaders/rodney-hayes.jpg',
+    },
   ];
 
   return (
@@ -69,9 +103,10 @@ const Ministries = () => {
         <div className="ministry-cta card">
           <h2 className="heading-font">Ready to Get Involved?</h2>
           <p className="body-font">
-            We believe everyone has unique gifts and talents to contribute to God’s kingdom.
-            Whether you&apos;re looking to serve, lead, or simply connect with others,
-            there&apos;s a place for you in our ministry family.
+            We believe everyone has unique gifts and talents to contribute to
+            God’s kingdom. Whether you&apos;re looking to serve, lead, or simply
+            connect with others, there&apos;s a place for you in our ministry
+            family.
           </p>
         </div>
       </div>
@@ -126,4 +161,3 @@ const Ministries = () => {
 };
 
 export default Ministries;
-
