@@ -1,12 +1,12 @@
 import React from "react";
 import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
-import youthLeaderPhoto from "gfm-website/src/assets/images/testimonials-5.jpg";
+import youthLeaderPhoto from "/assets/images/testimonials-5.jpg";
 
 
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
-
+n
 const Ministries = () => {
   const ministries = [
     {
