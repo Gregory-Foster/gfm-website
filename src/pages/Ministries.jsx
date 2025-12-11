@@ -30,7 +30,7 @@ const Ministries = () => {
       buttonLink: "#outreach",
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
-      leaderPhoto:
+      leaderPhoto:"/images/leaders/david-price.jpg",
     },
     {
       icon: FiMusic,
