@@ -1,6 +1,6 @@
-import React from 'react';
-import SectionCard from '../components/SectionCard';
-import * as FiIcons from 'react-icons/fi';
+import React from "react";
+import SectionCard from "../components/SectionCard";
+import * as FiIcons from "react-icons/fi";
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
@@ -8,69 +8,69 @@ const Ministries = () => {
   const ministries = [
     {
       icon: FiUsers,
-      title: 'Youth Ministry',
+      title: "Youth Ministry",
       description:
-        'Engaging programs for teens and young adults to grow in faith and fellowship.',
-      buttonText: 'Learn More',
-      buttonLink: '#youth',
-      leaderName: 'Minister James Carter',
-      leaderTitle: 'Youth Ministry Director',
-      leaderPhoto: '/images/leaders/james-carter.jpg',
+        "Engaging programs for teens and young adults to grow in faith and fellowship.",
+      buttonText: "Learn More",
+      buttonLink: "#youth",
+      leaderName: "Minister James Carter",
+      leaderTitle: "Youth Ministry Director",
+      leaderPhoto: "/images/leaders/james-carter.jpg",
     },
     {
       icon: FiHeart,
-      title: 'Community Outreach',
+      title: "Community Outreach",
       description:
-        'Serving our local community through food banks, shelter support, and assistance programs.',
-      buttonText: 'Get Involved',
-      buttonLink: '#outreach',
-      leaderName: 'Sister Angela Morris',
-      leaderTitle: 'Outreach Coordinator',
-      leaderPhoto: '/images/leaders/angela-morris.jpg',
+        "Serving our local community through food banks, shelter support, and assistance programs.",
+      buttonText: "Get Involved",
+      buttonLink: "#outreach",
+      leaderName: "Sister Angela Morris",
+      leaderTitle: "Outreach Coordinator",
+      leaderPhoto: "/images/leaders/angela-morris.jpg",
     },
     {
       icon: FiMusic,
-      title: 'Worship Team',
+      title: "Worship Team",
       description:
-        'Join our music ministry and help lead the congregation in praise and worship.',
-      buttonText: 'Join Us',
-      buttonLink: '#worship',
-      leaderName: 'Minister David Price',
-      leaderTitle: 'Worship Leader',
-      leaderPhoto: '/images/leaders/david-price.jpg',
+        "Join our music ministry and help lead the congregation in praise and worship.",
+      buttonText: "Join Us",
+      buttonLink: "#worship",
+      leaderName: "Minister David Price",
+      leaderTitle: "Worship Leader",
+      leaderPhoto: "/images/leaders/david-price.jpg",
     },
     {
       icon: FiBookOpen,
-      title: 'Bible Study Groups',
+      title: "Bible Study Groups",
       description:
-        'Small group Bible studies for deeper understanding and spiritual growth.',
-      buttonText: 'Find a Group',
-      buttonLink: '#biblestudy',
-      leaderName: 'Elder Sharon Williams',
-      leaderTitle: 'Discipleship Director',
-      leaderPhoto: '/images/leaders/sharon-williams.jpg',
+        "Small group Bible studies for deeper understanding and spiritual growth.",
+      buttonText: "Find a Group",
+      buttonLink: "#biblestudy",
+      leaderName: "Elder Sharon Williams",
+      leaderTitle: "Discipleship Director",
+      leaderPhoto: "/images/leaders/sharon-williams.jpg",
     },
     {
       icon: FiSun,
-      title: 'Children’s Ministry',
+      title: "Children’s Ministry",
       description:
-        'Fun and engaging programs to help children learn about God’s love.',
-      buttonText: 'Learn More',
-      buttonLink: '#children',
-      leaderName: 'Sister Monica Green',
-      leaderTitle: 'Children’s Ministry Leader',
-      leaderPhoto: '/images/leaders/monica-green.jpg',
+        "Fun and engaging programs to help children learn about God’s love.",
+      buttonText: "Learn More",
+      buttonLink: "#children",
+      leaderName: "Sister Monica Green",
+      leaderTitle: "Children’s Ministry Leader",
+      leaderPhoto: "/images/leaders/monica-green.jpg",
     },
     {
       icon: FiHome,
-      title: 'Family Ministry',
+      title: "Family Ministry",
       description:
-        'Strengthening families through biblical principles, prayer, and support.',
-      buttonText: 'Explore',
-      buttonLink: '#family',
-      leaderName: 'Pastor Rodney Hayes',
-      leaderTitle: 'Family Ministry Pastor',
-      leaderPhoto: '/images/leaders/rodney-hayes.jpg',
+        "Strengthening families through biblical principles, prayer, and support.",
+      buttonText: "Explore",
+      buttonLink: "#family",
+      leaderName: "Pastor Rodney Hayes",
+      leaderTitle: "Family Ministry Pastor",
+      leaderPhoto: "/images/leaders/rodney-hayes.jpg",
     },
   ];
 
