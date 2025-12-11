@@ -1,14 +1,14 @@
 import React from "react";
 import SectionCard from "../components/SectionCard";
-import * as FiIcons from "react-icons/fi"; // Fi = Feather Icons
+import * as FiIcons from "react-icons/fi";
 
-// Leader photos (paths are relative to src/pages/Ministries.jsx)
+// ✅ leader photos – paths are from src/pages → src/assets/images/leaders
 import youthLeaderPhoto from "../assets/images/leaders/agent-2.jpg";
-import outreachLeaderPhoto from "../assets/images/leaders/trainer-2.jpg";
+import outreachLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 import worshipLeaderPhoto from "../assets/images/leaders/IMG_0083.JPG";
-import bibleStudyLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
-import childrenLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
-import familyLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
+import discipleshipLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
+import childrenLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
+import familyLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
@@ -56,24 +56,24 @@ const Ministries = () => {
       buttonLink: "#biblestudy",
       leaderName: "Elder Sharon Williams",
       leaderTitle: "Discipleship Director",
-      leaderPhoto: bibleStudyLeaderPhoto,
+      leaderPhoto: discipleshipLeaderPhoto,
     },
     {
       icon: FiSun,
-      title: "Children’s Ministry",
+      title: "Children's Ministry",
       description:
-        "Fun and engaging programs to help children learn about God’s love.",
+        "Fun and engaging programs to help children learn about God's love.",
       buttonText: "Learn More",
       buttonLink: "#children",
       leaderName: "Sister Monica Green",
-      leaderTitle: "Children’s Ministry Leader",
+      leaderTitle: "Children's Ministry Leader",
       leaderPhoto: childrenLeaderPhoto,
     },
     {
       icon: FiHome,
       title: "Family Ministry",
       description:
-        "Strengthening families through biblical principles, prayer, and support.",
+        "Strengthening families through biblical principles, prayer, and community support.",
       buttonText: "Explore",
       buttonLink: "#family",
       leaderName: "Pastor Rodney Hayes",
@@ -86,12 +86,13 @@ const Ministries = () => {
     <div className="ministries-page">
       <div className="container">
         <div className="page-header">
-          <h1 className="page-title heading-font">Our Ministries</h1>
+          <h1 className="page-title heading-font">Ministries</h1>
           <p className="page-subtitle body-font">
             Discover ways to serve, grow, and connect in our church community.
           </p>
         </div>
 
+        {/* cards – 3 per row on desktop */}
         <div className="ministries-grid">
           {ministries.map((ministry, index) => (
             <SectionCard
@@ -112,10 +113,15 @@ const Ministries = () => {
           <h2 className="heading-font">Ready to Get Involved?</h2>
           <p className="body-font">
             We believe everyone has unique gifts and talents to contribute to
-            God’s kingdom. Whether you&apos;re looking to serve, lead, or simply
-            connect with others, there&apos;s a place for you in our ministry
+            God's kingdom. Whether you're looking to serve, lead, or simply
+            connect with others, there is a place for you in our ministry
             family.
           </p>
+          <div className="cta-buttons">
+            <a href="/contact" className="btn-primary">
+              Contact Us
+            </a>
+          </div>
         </div>
       </div>
 
@@ -143,63 +149,39 @@ const Ministries = () => {
           margin: 0 auto;
         }
 
-        /* 3 cards per row on desktop */
         .ministries-grid {
           display: grid;
-          grid-template-columns: repeat(3, minmax(260px, 1fr));
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 24px;
         }
 
-        /* 2 cards per row on medium screens */
         @media (max-width: 900px) {
           .ministries-grid {
-            grid-template-columns: repeat(2, minmax(220px, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
           }
         }
 
-        /* 1 card per row on phones */
         @media (max-width: 600px) {
           .ministries-grid {
             grid-template-columns: 1fr;
           }
         }
 
-        .ministries-page .leader-header {
-          margin-bottom: 8px;
-        }
-
-        .ministries-page .leader-name {
-          font-weight: 700;
-          color: var(--gfm-dark-blue);
-        }
-
-        .ministries-page .leader-title {
-          font-weight: 600;
-          color: var(--gfm-navy);
-          font-size: 0.95rem;
-          margin-bottom: 4px;
-        }
-
-        .ministries-page .card-title {
-          font-size: 1.15rem;
-          font-weight: 700;
-          color: var(--gfm-dark-blue);
-          margin-top: 4px;
-        }
-
         .ministry-cta {
-          padding: 40px 20px;
           margin-top: 40px;
+          padding: 40px 20px;
         }
 
         .ministry-cta h2 {
           font-size: 1.7rem;
+          margin-bottom: 10px;
         }
 
         .cta-buttons {
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-top: 20px;
         }
       `}</style>
     </div>
