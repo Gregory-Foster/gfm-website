@@ -3,6 +3,8 @@ import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
 import youthLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 
+
+
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
 const Ministries = () => {
