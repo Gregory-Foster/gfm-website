@@ -10,6 +10,7 @@ import childrenLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 import familyLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 
 
+
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 const Ministries = () => {
   const ministries = [
