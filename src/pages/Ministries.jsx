@@ -14,17 +14,18 @@ import familyLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 const Ministries = () => {
   const ministries = [
-    {
-      icon: FiUsers,
-      title: "Youth Ministry",
-      description:
-        "Engaging programs for teens and young adults to grow in faith and fellowship.",
-      buttonText: "Learn More",
-      buttonLink: "#youth",
-      leaderName: "Minister James Carter",
-      leaderTitle: "Youth Ministry Director",
-      leaderPhoto: "/images/leaders/david-price.jpg",
-    },
+   {
+  icon: FiUsers,
+  title: "Youth Ministry",
+  description:
+    "Engaging programs for teens and young adults to grow in faith and fellowship.",
+  buttonText: "Learn More",
+  buttonLink: "#youth",
+  leaderName: "Minister James Carter",
+  leaderTitle: "Youth Ministry Director",
+  leaderPhoto: youthLeaderPhoto,   // ← FIXED
+},
+
     {
       icon: FiHeart,
       title: "Community Outreach",
