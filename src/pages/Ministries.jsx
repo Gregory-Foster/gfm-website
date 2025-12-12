@@ -133,6 +133,12 @@ const Ministries = () => {
       {/* Page-specific styles */}
       <style jsx="true">{`
 .ministry-card {
+
+
+.leader-title {
+  font-weight: 700;      /* Bold */
+}
+
   height: 500px;        /* MAKE ALL CARDS SAME HEIGHT */
   display: flex;
   flex-direction: column;
