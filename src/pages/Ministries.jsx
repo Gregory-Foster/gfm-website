@@ -2,13 +2,10 @@ import React from "react";
 import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
 
-// ✅ leader photos – paths are from src/pages → src/assets/images/leaders
-import youthLeaderPhoto from "../assets/images/leaders/agent-2.jpg";
-import outreachLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
-import worshipLeaderPhoto from "../assets/images/leaders/IMG_0083.JPG";
-import discipleshipLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
-import childrenLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
-import familyLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
+// ✅ use the 3 images that actually exist
+import youthLeaderPhoto from "../assets/images/leaders/IMG_0010.png";
+import outreachLeaderPhoto from "../assets/images/leaders/IMG_0083.JPG";
+import worshipLeaderPhoto from "../assets/images/leaders/testimonials-5.jpg";
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
