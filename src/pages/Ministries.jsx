@@ -132,6 +132,12 @@ const Ministries = () => {
 
       {/* Page-specific styles */}
       <style jsx="true">{`
+.ministry-card {
+  height: 500px;        /* MAKE ALL CARDS SAME HEIGHT */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
       .ministry-card {
   background: white;
