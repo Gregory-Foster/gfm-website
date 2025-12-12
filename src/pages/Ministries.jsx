@@ -1,20 +1,21 @@
-// src/pages/Ministries.jsx
 import React from "react";
 import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
 
-// leader images – these files must exist in: src/assets/images/leaders
-import img1 from "../assets/images/leaders/IMG_0010.png";
-import img2 from "../assets/images/leaders/IMG_0083.JPG";
-import img3 from "../assets/images/leaders/testimonials-5.jpg";
+// ✅ Make sure these filenames match exactly (including lowercase .jpeg)
+import img1 from "../assets/images/leaders/IMG_0010.jpeg";
+import img2 from "../assets/images/leaders/IMG_0083.jpeg";
+import img3 from "../assets/images/leaders/IMG_0089.jpeg";
+
+const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
 const Ministries = () => {
   const ministries = [
     {
-      icon: FiIcons.FiUsers,
+      icon: FiUsers,
       title: "Youth Ministry",
       description:
-        "Engaging programs for teens and young adults to grow in faith and fellowship.",
+        "Engaging programs for teens and young adults to grow in faith, leadership, and fellowship.",
       buttonText: "Learn More",
       buttonLink: "#youth",
       leaderName: "Minister James Carter",
@@ -22,7 +23,7 @@ const Ministries = () => {
       leaderPhoto: img1,
     },
     {
-      icon: FiIcons.FiHeart,
+      icon: FiHeart,
       title: "Community Outreach",
       description:
         "Serving our local community through food banks, shelter support, and assistance programs.",
@@ -33,47 +34,47 @@ const Ministries = () => {
       leaderPhoto: img2,
     },
     {
-      icon: FiIcons.FiMusic,
+      icon: FiMusic,
       title: "Worship Team",
       description:
         "Join our music ministry and help lead the congregation in praise and worship.",
       buttonText: "Join Us",
       buttonLink: "#worship",
-      leaderName: "Minister David Price",
+      leaderName: "Elder Brian Thompson",
       leaderTitle: "Worship Leader",
       leaderPhoto: img3,
     },
     {
-      icon: FiIcons.FiBookOpen,
-      title: "Bible Study Groups",
+      icon: FiBookOpen,
+      title: "Christian Education",
       description:
-        "Small group Bible studies for deeper understanding and spiritual growth.",
-      buttonText: "Find a Group",
-      buttonLink: "#biblestudy",
-      leaderName: "Elder Sharon Williams",
-      leaderTitle: "Discipleship Director",
+        "Bible studies, small groups, and classes designed to help believers grow in the Word.",
+      buttonText: "View Classes",
+      buttonLink: "#education",
+      leaderName: "Deacon Lisa Howard",
+      leaderTitle: "Christian Education Director",
       leaderPhoto: img1,
     },
     {
-      icon: FiIcons.FiSun,
-      title: "Children's Ministry",
+      icon: FiSun,
+      title: "Children’s Ministry",
       description:
-        "Fun and engaging programs to help children learn about God's love.",
-      buttonText: "Learn More",
+        "Fun, safe, and Christ-centered environments where children learn about Jesus.",
+      buttonText: "Discover More",
       buttonLink: "#children",
-      leaderName: "Sister Monica Green",
-      leaderTitle: "Children's Ministry Leader",
+      leaderName: "Sister Monique Fields",
+      leaderTitle: "Children’s Ministry Leader",
       leaderPhoto: img2,
     },
     {
-      icon: FiIcons.FiHome,
-      title: "Family Ministry",
+      icon: FiHome,
+      title: "Care & Support",
       description:
-        "Strengthening families through biblical principles, prayer, and support.",
-      buttonText: "Explore",
-      buttonLink: "#family",
-      leaderName: "Pastor Rodney Hayes",
-      leaderTitle: "Family Ministry Pastor",
+        "Prayer, counseling, hospital visits, and support for members and families in need.",
+      buttonText: "Request Support",
+      buttonLink: "#care",
+      leaderName: "Elder Marcus Green",
+      leaderTitle: "Care Ministry Leader",
       leaderPhoto: img3,
     },
   ];
@@ -81,16 +82,15 @@ const Ministries = () => {
   return (
     <div className="ministries-page">
       <div className="container">
-        {/* header */}
         <div className="page-header">
           <h1 className="page-title heading-font">Our Ministries</h1>
           <p className="page-subtitle body-font">
-            Discover ways to serve, grow, and connect at Gregory Foster
+            Discover ways to serve, grow, and stay connected at Gregory Foster
             Ministries.
           </p>
         </div>
 
-        {/* cards – 3 per row on desktop, auto-wrap on smaller screens */}
+        {/* cards - 3 per row on desktop */}
         <div className="ministries-grid">
           {ministries.map((ministry, index) => (
             <SectionCard
@@ -107,50 +107,55 @@ const Ministries = () => {
           ))}
         </div>
 
-        {/* call to action */}
-        <div className="ministry-cta card">
-          <h2 className="heading-font">Ready to Get Involved?</h2>
+        {/* bottom CTA */}
+        <div className="ministry-cta">
+          <h2 className="heading-font">
+            Ready to Get Involved in Ministry?
+          </h2>
           <p className="body-font">
-            We believe everyone has unique gifts and talents for God's kingdom.
-            Whether you're looking to serve, learn, or simply connect with
-            others, there is a place for you and your family.
+            We believe everyone has unique gifts and talents that can be used
+            for God&apos;s kingdom. Whether you&apos;re looking to serve,
+            learn, or connect with others, there is a place for you in our
+            church family.
           </p>
+
           <div className="cta-buttons">
             <a href="/contact" className="btn-primary">
               Contact Us
+            </a>
+            <a href="/schedule" className="btn-secondary">
+              View Service Times
             </a>
           </div>
         </div>
       </div>
 
-      {/* page-specific styles */}
-      <style jsx>{`
+      {/* Page-specific styles */}
+      <style jsx="true">{`
         .ministries-page {
-          padding: 60px 0;
-          min-height: 80vh;
+          padding: 80px 0;
         }
 
         .container {
-          max-width: 1200px;
+          max-width: 1100px;
           margin: 0 auto;
           padding: 0 20px;
         }
 
         .page-header {
           text-align: center;
-          margin-bottom: 50px;
+          margin-bottom: 40px;
         }
 
         .page-title {
           font-size: 2.5rem;
-          color: var(--gfm-dark-blue);
-          margin-bottom: 15px;
+          margin-bottom: 10px;
         }
 
         .page-subtitle {
-          font-size: 1.2rem;
-          color: var(--gfm-navy);
-          max-width: 600px;
+          font-size: 1.1rem;
+          color: #555;
+          max-width: 650px;
           margin: 0 auto;
         }
 
@@ -158,12 +163,15 @@ const Ministries = () => {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           gap: 24px;
+          margin-bottom: 60px;
         }
 
         .ministry-cta {
-          margin-top: 60px;
+          margin-top: 40px;
           padding: 40px 20px;
           text-align: center;
+          background: #f7f7fb;
+          border-radius: 12px;
         }
 
         .ministry-cta h2 {
@@ -171,20 +179,36 @@ const Ministries = () => {
           margin-bottom: 10px;
         }
 
+        .ministry-cta p {
+          max-width: 650px;
+          margin: 0 auto 20px auto;
+        }
+
         .cta-buttons {
-          margin-top: 20px;
           display: flex;
-          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          display: inline-block;
+          padding: 10px 22px;
+          border-radius: 999px;
+          text-decoration: none;
+          font-weight: 600;
         }
 
         .btn-primary {
-          display: inline-block;
-          padding: 12px 28px;
-          border-radius: 4px;
-          background-color: var(--gfm-accent, #00b5e2);
+          background: var(--gfm-primary, #2b6cb0);
           color: #fff;
-          text-decoration: none;
-          font-weight: 600;
+        }
+
+        .btn-secondary {
+          border: 2px solid var(--gfm-primary, #2b6cb0);
+          color: var(--gfm-primary, #2b6cb0);
         }
 
         .btn-primary:hover {
@@ -192,19 +216,15 @@ const Ministries = () => {
         }
 
         /* Make ministry & leader titles stand out */
-        :global(.card-title) {
-          font-weight: 700;
-          font-size: 1.25rem;
-        }
-
+        :global(.card-title),
         :global(.leader-title) {
           font-weight: 700;
-          color: var(--gfm-dark-blue);
         }
 
-        @media (max-width: 768px) {
-          .page-title {
-            font-size: 2rem;
+        @media (min-width: 768px) {
+          .cta-buttons {
+            flex-direction: row;
+            justify-content: center;
           }
         }
       `}</style>
