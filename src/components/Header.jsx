@@ -16,7 +16,7 @@ const Header = () => {
 
   const mainNavItems = [
     { name: "Home", path: "/" },
-    { name: "Calendar", path: "/calendar" },
+    { name: "Schedule", path: "/calendar" },
     { name: "Ministries", path: "/ministries" },
     { name: "Sermons", path: "/sermons" },
     { name: "Prayer Requests", path: "/prayer-requests" },
