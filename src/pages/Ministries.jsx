@@ -2,12 +2,12 @@ import React from "react";
 import SectionCard from "../components/SectionCard";
 import * as FiIcons from "react-icons/fi";
 
-// ✅ Make sure these filenames match exactly (including lowercase .jpeg)
-import img1 from "../assets/images/leaders/IMG_0010.jpeg";
-import img2 from "../assets/images/leaders/IMG_0083.jpeg";
-import img3 from "../assets/images/leaders/IMG_0089.jpeg";
+import img1 from "../assets/images/leaders/IMG_0010.jpg";
+import img2 from "../assets/images/leaders/IMG_0083.jpg";
+import img3 from "../assets/images/leaders/IMG_0089.jpg";
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
+
 
 const Ministries = () => {
   const ministries = [
