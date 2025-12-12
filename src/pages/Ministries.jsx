@@ -12,72 +12,38 @@ const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 const Ministries = () => {
   const ministries = [
     {
-      icon: FiUsers,
+      icon: FiIcons.FiUsers,
       title: "Youth Ministry",
-      description:
-        "Engaging programs for teens and young adults to grow in faith and fellowship.",
+      description: "Engaging programs for teens and young adults to grow in faith and fellowship.",
       buttonText: "Learn More",
       buttonLink: "#youth",
       leaderName: "Minister James Carter",
       leaderTitle: "Youth Ministry Director",
-      leaderPhoto: youthLeaderPhoto,
+      leaderPhoto: youthLeaderPhoto,          // ✅ uses IMG_0010.png
     },
     {
-      icon: FiHeart,
+      icon: FiIcons.FiHeart,
       title: "Community Outreach",
-      description:
-        "Serving our local community through food banks, shelter support, and assistance programs.",
+      description: "Serving our local community through food banks, shelter support, and assistance programs.",
       buttonText: "Get Involved",
       buttonLink: "#outreach",
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
-      leaderPhoto: outreachLeaderPhoto,
+      leaderPhoto: outreachLeaderPhoto,       // ✅ uses IMG_0083.JPG
     },
     {
-      icon: FiMusic,
+      icon: FiIcons.FiMusic,
       title: "Worship Team",
-      description:
-        "Join our music ministry and help lead the congregation in praise and worship.",
+      description: "Join our music ministry and help lead the congregation in praise and worship.",
       buttonText: "Join Us",
       buttonLink: "#worship",
       leaderName: "Minister David Price",
       leaderTitle: "Worship Leader",
-      leaderPhoto: worshipLeaderPhoto,
+      leaderPhoto: worshipLeaderPhoto,        // ✅ uses testimonials-5.jpg
     },
-    {
-      icon: FiBookOpen,
-      title: "Bible Study Groups",
-      description:
-        "Small group Bible studies for deeper understanding and spiritual growth.",
-      buttonText: "Find a Group",
-      buttonLink: "#biblestudy",
-      leaderName: "Elder Sharon Williams",
-      leaderTitle: "Discipleship Director",
-      leaderPhoto: discipleshipLeaderPhoto,
-    },
-    {
-      icon: FiSun,
-      title: "Children's Ministry",
-      description:
-        "Fun and engaging programs to help children learn about God's love.",
-      buttonText: "Learn More",
-      buttonLink: "#children",
-      leaderName: "Sister Monica Green",
-      leaderTitle: "Children's Ministry Leader",
-      leaderPhoto: childrenLeaderPhoto,
-    },
-    {
-      icon: FiHome,
-      title: "Family Ministry",
-      description:
-        "Strengthening families through biblical principles, prayer, and community support.",
-      buttonText: "Explore",
-      buttonLink: "#family",
-      leaderName: "Pastor Rodney Hayes",
-      leaderTitle: "Family Ministry Pastor",
-      leaderPhoto: familyLeaderPhoto,
-    },
+    // you can keep reusing these three images for the rest of the cards
   ];
+
 
   return (
     <div className="ministries-page">
