@@ -132,6 +132,18 @@ const Ministries = () => {
 
       {/* Page-specific styles */}
       <style jsx="true">{`
+
+      .ministry-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 380px; /* ← FIXED HEIGHT */
+}
+
         .ministries-page {
           padding: 80px 0;
         }
