@@ -14,36 +14,38 @@ const Ministries = () => {
     {
       icon: FiIcons.FiUsers,
       title: "Youth Ministry",
-      description: "Engaging programs for teens and young adults to grow in faith and fellowship.",
+      description:
+        "Engaging programs for teens and young adults to grow in faith and fellowship.",
       buttonText: "Learn More",
       buttonLink: "#youth",
       leaderName: "Minister James Carter",
       leaderTitle: "Youth Ministry Director",
-      leaderPhoto: youthLeaderPhoto,          // ✅ uses IMG_0010.png
+      leaderPhoto: youthLeaderPhoto, // ✅ uses IMG_0010.png
     },
     {
       icon: FiIcons.FiHeart,
       title: "Community Outreach",
-      description: "Serving our local community through food banks, shelter support, and assistance programs.",
+      description:
+        "Serving our local community through food banks, shelter support, and assistance programs.",
       buttonText: "Get Involved",
       buttonLink: "#outreach",
       leaderName: "Sister Angela Morris",
       leaderTitle: "Outreach Coordinator",
-      leaderPhoto: outreachLeaderPhoto,       // ✅ uses IMG_0083.JPG
+      leaderPhoto: outreachLeaderPhoto, // ✅ uses IMG_0083.JPG
     },
     {
       icon: FiIcons.FiMusic,
       title: "Worship Team",
-      description: "Join our music ministry and help lead the congregation in praise and worship.",
+      description:
+        "Join our music ministry and help lead the congregation in praise and worship.",
       buttonText: "Join Us",
       buttonLink: "#worship",
       leaderName: "Minister David Price",
       leaderTitle: "Worship Leader",
-      leaderPhoto: worshipLeaderPhoto,        // ✅ uses testimonials-5.jpg
+      leaderPhoto: worshipLeaderPhoto, // ✅ uses testimonials-5.jpg
     },
     // you can keep reusing these three images for the rest of the cards
   ];
-
 
   return (
     <div className="ministries-page">
