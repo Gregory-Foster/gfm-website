@@ -130,128 +130,61 @@ const Ministries = () => {
         </div>
       </div>
 
-      {/* Page-specific styles */}
-      <style jsx="true">{`
-.ministry-card {
+     /* Page-specific styles */
+<style jsx="true">{`
+  .ministries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
 
+  /* CARD STYLES – ALL SAME HEIGHT */
+  .section-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px; /* 🔵 make all cards same height */
+  }
 
-.leader-title {
-  font-weight: 700;      /* Bold */
-}
+  /* LEADER PHOTO – SAME SIZE IN EVERY CARD */
+  .section-card .leader-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
 
-  height: 500px;        /* MAKE ALL CARDS SAME HEIGHT */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  /* TEXT INSIDE CARD */
+  .leader-title {
+    font-weight: 700;
+  }
 
-      .ministry-card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column; 
-  justify-content: space-between;
-  height: 380px; /* ← FIXED HEIGHT */
-}
+  .ministry-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-        .ministries-page {
-          padding: 80px 0;
-        }
+  /* RESPONSIVE GRID */
+  @media (max-width: 900px) {
+    .ministries-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
 
-        .container {
-          max-width: 1100px;
-          margin: 0 auto;
-          padding: 0 20px;
-        }
+  @media (max-width: 640px) {
+    .ministries-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+`}</style>
 
-        .page-header {
-          text-align: center;
-          margin-bottom: 40px;
-        }
-
-        .page-title {
-          font-size: 2.5rem;
-          margin-bottom: 10px;
-        }
-
-        .page-subtitle {
-          font-size: 1.1rem;
-          color: #555;
-          max-width: 650px;
-          margin: 0 auto;
-        }
-
-        .ministries-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 24px;
-          margin-bottom: 60px;
-        }
-
-        .ministry-cta {
-          margin-top: 40px;
-          padding: 40px 20px;
-          text-align: center;
-          background: #f7f7fb;
-          border-radius: 12px;
-        }
-
-        .ministry-cta h2 {
-          font-size: 1.7rem;
-          margin-bottom: 10px;
-        }
-
-        .ministry-cta p {
-          max-width: 650px;
-          margin: 0 auto 20px auto;
-        }
-
-        .cta-buttons {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 10px;
-          margin-top: 20px;
-        }
-
-        .btn-primary,
-        .btn-secondary {
-          display: inline-block;
-          padding: 10px 22px;
-          border-radius: 999px;
-          text-decoration: none;
-          font-weight: 600;
-        }
-
-        .btn-primary {
-          background: var(--gfm-primary, #2b6cb0);
-          color: #fff;
-        }
-
-        .btn-secondary {
-          border: 2px solid var(--gfm-primary, #2b6cb0);
-          color: var(--gfm-primary, #2b6cb0);
-        }
-
-        .btn-primary:hover {
-          opacity: 0.9;
-        }
-
-        /* Make ministry & leader titles stand out */
-        :global(.card-title),
-        :global(.leader-title) {
-          font-weight: 700;
-        }
-
-        @media (min-width: 768px) {
-          .cta-buttons {
-            flex-direction: row;
-            justify-content: center;
-          }
-        }
-      `}</style>
     </div>
   );
 };
