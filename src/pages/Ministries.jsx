@@ -111,7 +111,6 @@ const Ministries = () => {
         </div>
 
         {/* bottom CTA */}
-        <div className="ministry-cta">
        
       </div>
 
