@@ -69,7 +69,7 @@ input, textarea, select {
 /* Ministry card images – make them all the same size */
 .card-image {
   width: 100%;
-  height: 300px;       /* change this number to make them taller/shorter */
+  height: 500px;       /* change this number to make them taller/shorter */
   object-fit: cover;   /* crop nicely instead of stretching */
   border-radius: 8px;  /* match your card corners */
   display: block;
