@@ -132,6 +132,14 @@ const Ministries = () => {
 
      /* Page-specific styles */
 <style jsx="true">{`
+
+.card-image {
+  width: 100%;
+  height: 300px;      /* Adjust this number until the pictures look perfect */
+  object-fit: cover;  /* This keeps the picture from getting stretched */
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
   .ministries-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
