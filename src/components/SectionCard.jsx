@@ -18,11 +18,12 @@ const SectionCard = ({
       {(leaderPhoto || leaderName || leaderTitle) && (
         <div className="leader-section">
           {leaderPhoto && (
-            <img
-              src={leaderPhoto}
-              alt={leaderName || title}
-              className="leader-photo"
-            />
+           <img
+  src={leaderPhoto}
+  alt={leaderName}
+  className="card-image"
+/>
+
           )}
           {leaderName && <p className="leader-name">{leaderName}</p>}
           {leaderTitle && <p className="leader-title">{leaderTitle}</p>}
