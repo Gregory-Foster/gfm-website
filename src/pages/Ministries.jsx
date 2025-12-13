@@ -130,7 +130,6 @@ const Ministries = () => {
         </div>
       </div>
 
-     /* Page-specific styles */
 <style jsx="true">{`
 
 .card-image {
