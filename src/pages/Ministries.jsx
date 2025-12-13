@@ -54,7 +54,7 @@ const Ministries = () => {
         "Bible studies, small groups, and classes designed to help believers grow in the Word.",
       buttonText: "View Classes",
       buttonLink: "#education",
-      leaderName: "Deacon Lisa Howard",
+      leaderName: "Deacon Mark Howard",
       leaderTitle: "Christian Education Director",
       leaderPhoto: img4,
     },
