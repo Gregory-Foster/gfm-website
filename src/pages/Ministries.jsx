@@ -151,13 +151,13 @@ const Ministries = () => {
   /* CARD STYLES – ALL SAME HEIGHT */
   .section-card {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 500px; /* 🔵 make all cards same height */
+    height: 100px; /* 🔵 make all cards same height */
   }
 
   /* LEADER PHOTO – SAME SIZE IN EVERY CARD */
