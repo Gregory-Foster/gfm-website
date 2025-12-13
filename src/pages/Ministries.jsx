@@ -5,6 +5,9 @@ import * as FiIcons from "react-icons/fi";
 import img1 from "../assets/images/leaders/IMG_0010.jpg";
 import img2 from "../assets/images/leaders/IMG_0083.jpg";
 import img3 from "../assets/images/leaders/IMG_0089.jpg";
+import img4 from "../assets/images/leaders/IMG_0010.jpg";
+import img5 from "../assets/images/leaders/IMG_0083.jpg";
+import img6 from "../assets/images/leaders/IMG_0089.jpg";
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
 
@@ -53,7 +56,7 @@ const Ministries = () => {
       buttonLink: "#education",
       leaderName: "Deacon Lisa Howard",
       leaderTitle: "Christian Education Director",
-      leaderPhoto: img1,
+      leaderPhoto: img4,
     },
     {
       icon: FiSun,
@@ -64,7 +67,7 @@ const Ministries = () => {
       buttonLink: "#children",
       leaderName: "Sister Monique Fields",
       leaderTitle: "Children’s Ministry Leader",
-      leaderPhoto: img2,
+      leaderPhoto: img5,
     },
     {
       icon: FiHome,
@@ -75,7 +78,7 @@ const Ministries = () => {
       buttonLink: "#care",
       leaderName: "Elder Marcus Green",
       leaderTitle: "Care Ministry Leader",
-      leaderPhoto: img3,
+      leaderPhoto: img6,
     },
   ];
 
