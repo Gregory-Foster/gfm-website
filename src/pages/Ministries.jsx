@@ -6,7 +6,7 @@ import img1 from "../assets/images/leaders/IMG_0020.jpg";
 import img2 from "../assets/images/leaders/IMG_0014.jpg";
 import img3 from "../assets/images/leaders/IMG_0016.jpg";
 import img4 from "../assets/images/leaders/IMG_0017.jpg";
-import img5 from "../assets/images/leaders/IMG_0012.jpg";
+import img5 from "../assets/images/leaders/IMG_0019.jpg";
 import img6 from "../assets/images/leaders/IMG_0012.jpg";
 
 const { FiUsers, FiHeart, FiMusic, FiBookOpen, FiSun, FiHome } = FiIcons;
