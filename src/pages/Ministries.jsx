@@ -112,25 +112,7 @@ const Ministries = () => {
 
         {/* bottom CTA */}
         <div className="ministry-cta">
-          <h2 className="heading-font">
-            Ready to Get Involved in Ministry?
-          </h2>
-          <p className="body-font">
-            We believe everyone has unique gifts and talents that can be used
-            for God&apos;s kingdom. Whether you&apos;re looking to serve,
-            learn, or connect with others, there is a place for you in our
-            church family.
-          </p>
-
-          <div className="cta-buttons">
-            <a href="/contact" className="btn-primary">
-              Contact Us
-            </a>
-            <a href="/schedule" className="btn-secondary">
-              View Service Times
-            </a>
-          </div>
-        </div>
+       
       </div>
 
 <style jsx="true">{`
