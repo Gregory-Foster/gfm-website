@@ -135,7 +135,7 @@ const Ministries = () => {
 
 .card-image {
   width: 100%;
-  height: 400px;      /* Adjust this number until the pictures look perfect */
+  height: 450px;      /* Adjust this number until the pictures look perfect */
   object-fit: cover;  /* This keeps the picture from getting stretched */
   border-radius: 8px; /* Optional for rounded corners */
 }
