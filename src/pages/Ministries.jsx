@@ -155,7 +155,7 @@ const Ministries = () => {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px; /* 🔵 make all cards same height */
+    min-height: 500px; /* 🔵 make all cards same height */
   }
 
   /* LEADER PHOTO – SAME SIZE IN EVERY CARD */
