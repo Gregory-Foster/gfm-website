@@ -66,12 +66,5 @@ input, textarea, select {
   outline: none;
 }
 
-/* Ministry card images – make them all the same size */
-.card-image {
-  width: 100%;
-  height: 700px;       /* change this number to make them taller/shorter */
-  object-fit: cover;   /* crop nicely instead of stretching */
-  border-radius: 8px;  /* match your card corners */
-  display: block;
-}
+
 
