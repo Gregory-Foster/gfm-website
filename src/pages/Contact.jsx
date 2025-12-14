@@ -151,7 +151,7 @@ const Contact = () => {
             <div className="hours-card card">
               <h3 className="info-title heading-font">
                 <SafeIcon icon={FiClock} />
-                Office Hours
+                Administrative & Scheduling Hours
               </h3>
               
               <div className="hours-list">
