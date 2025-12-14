@@ -14,7 +14,7 @@ const Hero = () => {
               (John 10:10)
             </p>
             <Link to="/contact" className="btn-outline hero-btn">
-              Care and Connection
+              Care & Connection
             </Link>
           </div>
           
