@@ -30,9 +30,9 @@ const Contact = () => {
     <div className="contact-page">
       <div className="container">
         <div className="page-header">
-          <h1 className="page-title heading-font">We're Here for You</h1>
+          <h1 className="page-title heading-font">Care & Connection</h1>
           <p className="page-subtitle body-font">
-           Whether you need prayer, guidance, or urgent pastoral care, help is available.
+           We're here for you. Whether you need prayer, guidance, or urgent pastoral care, you don't have to walk alone.
           </p>
         </div>
 
@@ -178,12 +178,10 @@ const Contact = () => {
               <h3 className="info-title heading-font">Emergency Pastoral Care</h3>
               <p className="body-font">
                 For urgent spiritual or emotional needs.
-                available anytime., please call our 
+                available anytime. Please call our 
                 emergency line at <strong>(555) 999-PRAY</strong> available 24/7.
               </p>
-               <p className="body-font">
-                Available anytime.<strong>(555) 999-PRAY</strong> available 24/7.
-              </p>
+              
             </div>
 
             <div className="social-card card">
