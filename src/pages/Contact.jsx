@@ -185,10 +185,9 @@ const Contact = () => {
             </div>
 
             <div className="social-card card">
-              <h3 className="info-title heading-font">Follow Us</h3>
+              <h3 className="info-title heading-font">Stay Connected With Us</h3>
               <p className="body-font">
-                Stay connected with our community through social media for updates, 
-                encouragement, and ministry highlights.
+                Church dosen't only happen in a moment - walk with us throughout the week for encouragement, teaching, and updates.
               </p>
               <div className="social-links">
                 <a href="#" className="social-link">Facebook</a>
