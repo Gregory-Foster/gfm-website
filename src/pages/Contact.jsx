@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="page-header">
           <h1 className="page-title heading-font">Contact Us</h1>
           <p className="page-subtitle body-font">
-            We'd love to hear from you. Reach out with any questions or to connect with our community.
+           We're Here for You
           </p>
         </div>
 
