@@ -177,7 +177,8 @@ const Contact = () => {
             <div className="emergency-card card">
               <h3 className="info-title heading-font">Emergency Pastoral Care</h3>
               <p className="body-font">
-                For urgent spiritual or emotional needs., please call our 
+                For urgent spiritual or emotional needs.
+                available anytime., please call our 
                 emergency line at <strong>(555) 999-PRAY</strong> available 24/7.
               </p>
             </div>
