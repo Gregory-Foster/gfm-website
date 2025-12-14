@@ -120,7 +120,7 @@ const Contact = () => {
                   <div className="method-details">
                     <h4>Phone</h4>
                     <p>(555) 123-4567</p>
-                    <span>Call us during office hours</span>
+                    <span>Call answered during administrative hours</span>
                   </div>
                 </div>
 
