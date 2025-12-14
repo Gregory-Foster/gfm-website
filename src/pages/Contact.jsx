@@ -30,9 +30,9 @@ const Contact = () => {
     <div className="contact-page">
       <div className="container">
         <div className="page-header">
-          <h2 className="page-title heading-font">Contact Us</h2>
+          <h1 className="page-title heading-font">We're Here for You</h1>
           <p className="page-subtitle body-font">
-           We're Here for You
+           Whether you need prayer, guidance, or urgent pastoral care, help is available.
           </p>
         </div>
 
