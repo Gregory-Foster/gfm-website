@@ -181,6 +181,9 @@ const Contact = () => {
                 available anytime., please call our 
                 emergency line at <strong>(555) 999-PRAY</strong> available 24/7.
               </p>
+               <p className="body-font">
+                Available anytime.<strong>(555) 999-PRAY</strong> available 24/7.
+              </p>
             </div>
 
             <div className="social-card card">
