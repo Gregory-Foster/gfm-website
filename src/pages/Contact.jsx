@@ -30,7 +30,7 @@ const Contact = () => {
     <div className="contact-page">
       <div className="container">
         <div className="page-header">
-          <h1 className="page-title heading-font">Contact Us</h1>
+          <h2 className="page-title heading-font">Contact Us</h2>
           <p className="page-subtitle body-font">
            We're Here for You
           </p>
